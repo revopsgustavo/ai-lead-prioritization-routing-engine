@@ -64,7 +64,14 @@ A evolucao natural integra CRM, Marketing Automation e Sales Engagement, com ing
 Adicionar custos por canal, motivos de perda, cadencia SDR e simulacao de capacidade para testar cenarios de roteamento antes da automacao.
 
 ## Dashboard Preview
-O dashboard Streamlit fica em `app/streamlit_app.py`. Screenshots devem ser adicionados em `docs/screenshots/` antes da divulgação pública.
+O dashboard Streamlit fica em `app/streamlit_app.py`. A prova visual abaixo foi gerada a partir da aplicacao local com dados sinteticos.
+
+![Executive view](docs/screenshots/executive-view.png)
+
+Screenshots adicionais:
+- [Diagnostic view](docs/screenshots/diagnostic-view.png)
+- [Gap consultant](docs/screenshots/gap-consultant.png)
+- [Decision view](docs/screenshots/decision-view.png)
 
 ## Data Disclaimer
 Todos os dados são sintéticos. O projeto não usa APIs externas nem dados reais. As análises são rule-based e devem ser tratadas como hipóteses para validação, não como causa raiz confirmada.
