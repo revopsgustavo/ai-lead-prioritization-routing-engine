@@ -1,7 +1,7 @@
 # Final Handoff Report
 
 ## Status
-Projeto criado, pipeline executado localmente e dashboard validado com resposta HTTP 200.
+Projeto criado e pipeline executado localmente.
 
 ## Arquivos gerados
 Scripts em `src/`, dashboard em `app/`, docs em `docs/`, slides em `slides/` e dados em `data/processed/`.
@@ -10,9 +10,7 @@ Scripts em `src/`, dashboard em `app/`, docs em `docs/`, slides em `slides/` e d
 Foram gerados 2247 leads sinteticos em 90 dias, alem de contas, canais, campanhas, SDRs, regras, atividades, SLA, scores, decisoes de roteamento e outcomes.
 
 ## Validacoes
-- `python -m compileall src app`: executado com sucesso.
-- `python -m pytest`: validado no Python 3.12 local, 5 testes passaram.
-- `streamlit run app/streamlit_app.py`: comando literal nao estava no PATH deste ambiente; validado com `python -m streamlit run app/streamlit_app.py`, servidor em porta local de validacao respondeu HTTP 200.
+Rodar `python -m compileall src app`, `python -m pytest` e `streamlit run app/streamlit_app.py`.
 
 ## Pendencias
 Integrar dados reais de CRM, Marketing Automation e Sales Engagement em uma evolucao de producao.
