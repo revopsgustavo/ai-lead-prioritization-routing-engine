@@ -1,4 +1,4 @@
-#  Lead Routing Analytics
+# Lead Routing Analytics
 
 Case de portfolio em RevOps Analytics para priorizacao e roteamento de leads em uma operacao SaaS B2B sintetica.
 
