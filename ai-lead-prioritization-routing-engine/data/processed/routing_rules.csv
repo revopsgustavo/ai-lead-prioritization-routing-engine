@@ -1,0 +1,6 @@
+rule_id,rule_name,condition,default_sdr_id,default_priority_tier,status
+rule_01,Enterprise and Partner to strategic SDR,segment = enterprise or channel = partner,sdr_05,p1,active
+rule_02,Paid Search round robin SMB,channel = paid_search and segment = smb,sdr_02,p3,active
+rule_03,Webinar and organic to mid market,"channel in webinar, organic",sdr_01,p2,active
+rule_04,Outbound named accounts,channel = outbound,sdr_03,p2,active
+rule_05,Fallback manual queue,no rule matched,,p4,active

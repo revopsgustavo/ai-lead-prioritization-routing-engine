@@ -1,0 +1,9 @@
+campaign_id,campaign_name,channel,motion,scenario
+camp_01,Search Always On,paid_search,acquisition,high_volume_low_fit
+camp_02,Brand Competitor Capture,paid_search,acquisition,high_intent_mixed_fit
+camp_03,Customer Referral Q3,referral,referral,low_volume_high_quality
+camp_04,Outbound Named Accounts,outbound,sales,sdr_variance
+camp_05,Partner Marketplace,partner,partner,low_volume_high_arr
+camp_06,Operations Webinar,webinar,demand,good_intent_sla_sensitive
+camp_07,SEO RevOps Templates,organic,demand,mid_quality
+camp_08,Generic SaaS Keywords,paid_search,acquisition,high_volume_low_sql

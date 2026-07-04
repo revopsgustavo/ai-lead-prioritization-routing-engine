@@ -1,0 +1,6 @@
+sdr_id,sdr_name,territory,daily_capacity,expected_sql_rate,status
+sdr_01,Ana Martins,mid_market,22,0.24,active
+sdr_02,Bruno Costa,smb,20,0.12,active
+sdr_03,Carla Nunes,enterprise,16,0.27,active
+sdr_04,Diego Lima,smb,18,0.19,active
+sdr_05,Elisa Rocha,strategic,14,0.31,active

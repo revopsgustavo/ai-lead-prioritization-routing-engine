@@ -1,0 +1,47 @@
+check_name,table,status,severity,detail
+file_exists,leads,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\leads.csv
+required_column_exists,leads,pass,critical,lead_id
+required_column_exists,leads,pass,critical,account_id
+required_column_exists,leads,pass,critical,channel
+required_column_exists,leads,pass,critical,created_date
+required_column_exists,leads,pass,critical,priority_tier
+primary_id_not_null,leads,pass,critical,lead_id
+file_exists,lead_scores,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\lead_scores.csv
+required_column_exists,lead_scores,pass,critical,lead_id
+required_column_exists,lead_scores,pass,critical,icp_fit_score
+required_column_exists,lead_scores,pass,critical,intent_score
+required_column_exists,lead_scores,pass,critical,lead_score
+primary_id_not_null,lead_scores,pass,critical,lead_id
+file_exists,routing_decisions,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\routing_decisions.csv
+required_column_exists,routing_decisions,pass,critical,lead_id
+required_column_exists,routing_decisions,pass,critical,sdr_id
+required_column_exists,routing_decisions,pass,critical,rule_id
+required_column_exists,routing_decisions,pass,critical,priority_tier
+primary_id_not_null,routing_decisions,pass,critical,lead_id
+file_exists,conversion_outcomes,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\conversion_outcomes.csv
+required_column_exists,conversion_outcomes,pass,critical,lead_id
+required_column_exists,conversion_outcomes,pass,critical,conversion_status
+required_column_exists,conversion_outcomes,pass,critical,is_mql
+required_column_exists,conversion_outcomes,pass,critical,is_sql
+required_column_exists,conversion_outcomes,pass,critical,is_opportunity
+primary_id_not_null,conversion_outcomes,pass,critical,lead_id
+file_exists,sdrs,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\sdrs.csv
+required_column_exists,sdrs,pass,critical,sdr_id
+required_column_exists,sdrs,pass,critical,sdr_name
+required_column_exists,sdrs,pass,critical,daily_capacity
+primary_id_not_null,sdrs,pass,critical,sdr_id
+file_exists,sla_events,pass,critical,C:\Users\Gustavo Lazzaroto\Documents\Playground\ai-lead-prioritization-routing-engine\data\processed\sla_events.csv
+required_column_exists,sla_events,pass,critical,lead_id
+required_column_exists,sla_events,pass,critical,sla_status
+required_column_exists,sla_events,pass,critical,response_time_hours
+primary_id_not_null,sla_events,pass,critical,lead_id
+leads_have_lead_id,leads,pass,critical,lead_id
+leads_have_channel,leads,pass,high,channel
+valid_created_date,leads,pass,high,created_date
+scores_between_0_100,lead_scores,pass,high,icp_fit_score
+scores_between_0_100,lead_scores,pass,high,intent_score
+scores_between_0_100,lead_scores,pass,high,lead_score
+leads_without_score,lead_scores,pass,high,all leads should have score
+valid_sla_status,sla_events,pass,high,met/breached
+routing_decisions_without_sdr_id,routing_decisions,fail,medium,25 null sdr_id
+conversion_outcomes_without_status,conversion_outcomes,pass,critical,conversion_status
